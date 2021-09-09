@@ -1,16 +1,24 @@
 
 <html>
  <head>
+  <style>
+   button{
+       transition-duration: 0.4s;
+   }
+   button:hover{
+       background-color: black;
+   } 
+  </style>
   <title> Index </title>
  </head>
 
- <body style="font-size:20px;">
+ <body style="font-size:20px; background-color:darkturquoise;">
   
   <div align="center" id="homepageHeading">
    <h1> Home Page </h1>
   </div>
   
-  <div overflow="hidden" id="homepageLinks" align="center">
+  <div overflow="hidden" id="homepageLinks" align="center" style="background-color:white; padding: 10px 10px;">
    <a href="aboutMe.html">About Me</a>
   </div>
   
@@ -34,8 +42,8 @@
   <br>
 
   <div id="homepageButtons" align="center">
-   <button onclick="window.location.href='https://paultownshend.github.io/personalWebsite/'"> Previous Student </button>
-   <button onclick="window.location.href='https://acastro0726.github.io/'"> Next Student </button>
+   <button style="font-size:20px; color:black; padding: 10px 10px; border-radius: 12px;" onclick="window.location.href='https://paultownshend.github.io/personalWebsite/'"> Previous Student </button>
+   <button style="font-size:20px; color:black; padding: 10px 10px; border-radius: 12px;" onclick="window.location.href='https://acastro0726.github.io/'"> Next Student </button>
   </div>
 
  </body>
