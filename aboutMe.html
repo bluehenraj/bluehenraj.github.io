@@ -3,24 +3,48 @@
 <html lang="en">
  <head>
   <style>
+    body{
+       font-size:20px; 
+       background-color:darkturquoise;
+    }
+    #heading{
+       text-align: center;
+    }
+    #education #ud_image{
+       float: left;
+    }
+    #hobbiesInterests{
+       overflow: hidden;
+    }
+    #interestingFact #small_baby_image{
+       float: left;
+    }
     button{
+       position: absolute; 
+       top: 216%;
+       left: 40%;
+       font-size:20px; 
+       color:black; 
+       padding: 10px 10px; 
+       border-radius: 12px;
        transition-duration: 0.4s;
     }
     button:hover{
        background-color: black;
+       color: white;
     } 
   </style>
   <title> About Me </title>
  </head>
 
- <body style="font-size:20px; background-color:darkturquoise">
+ <body>
   <div id="heading">
-   <h1 align="center"> About Me </h1>
+   <h1> About Me </h1>
   </div>
   
   <div id="education">
    <h2> Education </h2>
-   <img src="UD_image.jpeg" width="100" height="100" align="left">
+   <img id="ud_image" src="UD_image.jpeg" width="100" height="100">
    <b> Major - </b> Computer Science <br>
    <b> School Year - </b> Senior <br>
    <b> Graduation Date - </b> May 2022 <br>
@@ -30,7 +54,7 @@
   <br>
   <br clear="all">
 
-  <div id="hobbiesInterests" overflow="hidden">
+  <div id="hobbiesInterests">
    <h2> Hobbies/Interests </h2>
 
    &nbsp; &nbsp;
@@ -56,7 +80,7 @@
 
   <div id="interestingFact">
    <h2> Interesting Fact </h2>
-   <img src="small_baby_image.jpeg" width="200" height="200" align="left">
+   <img id="small_baby_image" src="small_baby_image.jpeg" width="200" height="200">
    <p> I was born on midnight of December 31<sup>st</sup>, 1999. This means it was a change of a Century(from 20th to 21st). 
    <br> Thus, my closed ones also call me <b>millennium boy.</b>
    </p>
@@ -79,8 +103,8 @@
   <br>
   <br>
 
-  <div id="buttons" align="center">
-   <button style="font-size:20px; color:black; padding: 10px 10px; border-radius: 12px;" onclick="window.location.href='index.html'"> Back To Home Page </button>
+  <div id="buttons">
+   <button onclick="window.location.href='index.html'"> Back To Home Page </button>
   </div>
  </body>
 </html>

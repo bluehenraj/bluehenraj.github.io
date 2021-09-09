@@ -3,30 +3,51 @@
 <html lang="en">
  <head>
   <style>
+   body{
+       font-size:20px; 
+       background-color:darkturquoise;
+   }
+   #homepageHeading{
+       text-align: center;
+   }
+   #homepageLinks{
+       overflow: hidden;
+       text-align: center;
+       background-color: white; 
+       padding: 10px 10px;
+   }
+   img{
+       float: left;
+   }
    button{
+       font-size:20px; 
+       color:black; 
+       padding: 10px 10px; 
+       border-radius: 12px;
        transition-duration: 0.4s;
    }
    button:hover{
        background-color: black;
+       color: white;
    } 
   </style>
   <title> Index </title>
  </head>
 
- <body style="font-size:20px; background-color:darkturquoise;">
+ <body>
   
-  <div align="center" id="homepageHeading">
+  <div id="homepageHeading">
    <h1> Home Page </h1>
   </div>
   
-  <div overflow="hidden" id="homepageLinks" align="center" style="background-color:white; padding: 10px 10px;">
+  <div id="homepageLinks">
    <a href="aboutMe.html">About Me</a>
   </div>
   
   <br>
 
   <div id="myImage">
-   <img src="My_Image.jpg" alt="Professional Pic of myself" width="300" height="300" align="left">
+   <img src="My_Image.jpg" alt="Professional Pic of myself" width="300" height="300">
   </div>
 
   <div id="homepageContent">
@@ -38,12 +59,12 @@
    <b> Link to the course website: </b> <a href="https://mattm401.github.io">CISC474 Course Website </a>
   </div>
 
-  <br clear="all">
+  <br>
   <br>
 
-  <div id="homepageButtons" align="center">
-   <button style="font-size:20px; color:black; padding: 10px 10px; border-radius: 12px;" onclick="window.location.href='https://paultownshend.github.io/personalWebsite/'"> Previous Student </button>
-   <button style="font-size:20px; color:black; padding: 10px 10px; border-radius: 12px;" onclick="window.location.href='https://acastro0726.github.io/'"> Next Student </button>
+  <div id="homepageButtons">
+   <button style="position: absolute; top: 70%; left: 35%;" onclick="window.location.href='https://paultownshend.github.io/personalWebsite/'"> Previous Student </button>
+   <button style="position: absolute; top: 70%; left: 52%;" onclick="window.location.href='https://acastro0726.github.io/'"> Next Student </button>
   </div>
 
  </body>
