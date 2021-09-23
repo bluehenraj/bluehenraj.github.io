@@ -2,35 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <style>
-   body{
-       font-size:20px; 
-       background-color:darkturquoise;
-   }
-   #homepageHeading{
-       text-align: center;
-   }
-   #homepageLinks{
-       overflow: hidden;
-       text-align: center;
-       background-color: white; 
-       padding: 10px 10px;
-   }
-   img{
-       float: left;
-   }
-   button{
-       font-size:20px; 
-       color:black; 
-       padding: 10px 10px; 
-       border-radius: 12px;
-       transition-duration: 0.4s;
-   }
-   button:hover{
-       background-color: black;
-       color: white;
-   } 
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
   <title> Index </title>
  </head>
 
@@ -55,7 +27,7 @@
   <br>
 
   <div id="myImage">
-   <img src="My_Image.jpg" alt="Professional Pic of myself" width="300" height="300">
+   <img src="My_Image.jpg" id="my_image" alt="Professional Pic of myself" width="300" height="300">
   </div>
 
   <div id="homepageContent">
@@ -71,8 +43,8 @@
   <br>
 
   <div id="homepageButtons">
-   <button style="position: absolute; top: 70%; left: 35%;" onclick="window.location.href='https://paultownshend.github.io/personalWebsite/'"> Previous Student </button>
-   <button style="position: absolute; top: 70%; left: 52%;" onclick="window.location.href='https://acastro0726.github.io/'"> Next Student </button>
+   <button id="prev-student-button" onclick="window.location.href='https://paultownshend.github.io/personalWebsite/'"> Previous Student </button>
+   <button id="next-student-button" onclick="window.location.href='https://acastro0726.github.io/'"> Next Student </button>
   </div>
 
  </body>

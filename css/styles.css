@@ -1,0 +1,76 @@
+ body{
+    font-size:20px; 
+    background-color:darkturquoise;
+ }
+ #homepageHeading{
+    text-align: center;
+ }
+ #homepageLinks{
+    overflow: hidden;
+    text-align: center;
+    background-color: white; 
+    padding: 10px 10px;
+ }
+ #my_image{
+     float: left;
+ }
+ #heading{
+    text-align: center;
+ }
+ #education #ud_image{
+    float: left;
+ }
+ #hobbiesInterests{
+    overflow: hidden;
+ }
+ #singing-img-text{
+     float:left;
+     margin-left: 150px;
+ }
+ #meditation-img-text{
+    float:left;
+    margin-left: 230px;
+ }
+ #nature-img-text{
+    float:left;
+    margin-left: 90px;
+ }
+ #sports-img-text{
+    float:left;
+    margin-left: 150px;
+ }
+ #interestingFact #small_baby_image{
+    float: left;
+ }
+ #webDevelopmentAspect{
+    clear: both;
+ }
+ #bulleted-list{
+    list-style-position:inside;
+ }
+ button{
+    font-size:20px; 
+    color:black; 
+    padding: 10px 10px; 
+    border-radius: 12px;
+    transition-duration: 0.4s;
+ }
+ #prev-student-button{
+    position: absolute; 
+    top: 70%; 
+    left: 35%;
+ }
+ #next-student-button{
+    position: absolute; 
+    top: 70%; 
+    left: 52%;
+ }
+ #back-to-index-button{
+    position: absolute; 
+    top: 200%;
+    left: 40%;
+ }
+ button:hover{
+    background-color: black;
+    color: white;
+ }

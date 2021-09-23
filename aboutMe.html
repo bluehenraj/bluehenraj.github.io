@@ -2,39 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <style>
-    body{
-       font-size:20px; 
-       background-color:darkturquoise;
-    }
-    #heading{
-       text-align: center;
-    }
-    #education #ud_image{
-       float: left;
-    }
-    #hobbiesInterests{
-       overflow: hidden;
-    }
-    #interestingFact #small_baby_image{
-       float: left;
-    }
-    button{
-       position: absolute; 
-       top: 200%;
-       left: 40%;
-       font-size:20px; 
-       color:black; 
-       padding: 10px 10px; 
-       border-radius: 12px;
-       transition-duration: 0.4s;
-    }
-    button:hover{
-       background-color: black;
-       color: white;
-    } 
-  </style>
   <title> About Me </title>
+  <link rel="stylesheet" href="css/styles.css">
  </head>
 
  <body>
@@ -70,8 +39,8 @@
    <img src="meditation_image.jpg" alt="Image of a person meditating" width="300" height="300">     
    <br>
 
-   <b style="float:left; margin-left:150px"> Singing </b>
-   <b style="float:left; margin-left:230px"> Meditation </b>
+   <b id="singing-img-text"> Singing </b>
+   <b id="meditation-img-text"> Meditation </b>
    <br> 
    <br> &nbsp; &nbsp;
 
@@ -79,8 +48,8 @@
    <img src="watching_sports_image.jpg" alt="Image of a TV Remote and Sports channel" width="300" height="300">
    <br>
 
-   <b style="float:left; margin-left:90px"> Walking out in nature </b>
-   <b style="float:left; margin-left:150px"> Watching sports </b> 
+   <b id="nature-img-text"> Walking out in nature </b>
+   <b id="sports-img-text"> Watching sports </b> 
   </div>
   
   <br>
@@ -94,11 +63,11 @@
    </p>
   </div>
 
-  <div id="webDevelopmentAspect" style="clear: both;">  
+  <div id="webDevelopmentAspect">  
    <br>
    <h2> Web Development </h2>
    <p> The aspects of web development that I am most interested in are as follows: </p>
-   <ul style="list-style-position:inside;">
+   <ul id="bulleted-list">
       <li> Visual Design </li>
       <li> Content </li>
       <li> Web/Mobile Friendly </li>
@@ -110,7 +79,7 @@
   <br>
 
   <div id="buttons">
-   <button onclick="window.location.href='index.html'"> Back To Home Page </button>
+   <button id="back-to-index-button" onclick="window.location.href='index.html'"> Back To Home Page </button>
   </div>
  </body>
 </html>
