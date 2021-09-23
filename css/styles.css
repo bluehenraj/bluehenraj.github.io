@@ -1,6 +1,6 @@
  body{
     font-size:20px; 
-    background-color:darkturquoise;
+    background-color:rgb(176, 229, 230);
  }
  #homepageHeading{
     text-align: center;
@@ -8,8 +8,16 @@
  #homepageLinks{
     overflow: hidden;
     text-align: center;
-    background-color: white; 
+    background-color: black; 
     padding: 10px 10px;
+ }
+ #homepageLinks a{
+    text-decoration: none;
+    color: white;
+ }
+ #homepageLinks a:hover{
+    background-color: white;
+    color: black;
  }
  #my_image{
      float: left;
