@@ -57,6 +57,12 @@
  #bulleted-list{
     list-style-position:inside;
  }
+ .contactFormHeading{
+    text-align: center;
+ }
+ #contactFormDescription{
+    text-align: center;
+ }
  button{
     font-size:20px; 
     color:black; 
