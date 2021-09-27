@@ -2,6 +2,11 @@ import { tldsTokens } from './tldstokens.js';
 
 let tldsArr = tldsTokens.toLowerCase().split("\n");
 
+(function() {
+    // https://dashboard.emailjs.com/admin/integration
+    emailjs.init('user_hd6MEkKNrWYMfbi7hdzqU');
+})();
+
 // Check the format of an email address
 let isValidEmailAddress = function(emailAddress){
 
@@ -147,11 +152,22 @@ document.getElementById("contact_form").onsubmit = function(){
         document.getElementById("phoneChecker").innerText = "";
         document.getElementById("messageChecker").innerText = "";
     }
+
+    // Check for valid phone number format
     if(isValidPhoneNumber(phone)){
 
         // Check for valid email address format after phone
         if(isValidEmailAddress(email)){
             document.getElementById("successMessage").innerText = "SUCCESS!!!";
+
+            // Send an email using EmailJS
+            emailjs.send("contact_service","contact_form",{
+                to_name: "Raj Trivedi",
+                from_name: fName + " " + lName,
+                message: message,
+                user_email: email,
+                contact_number: phone,
+            });
             return false;
         }
     }

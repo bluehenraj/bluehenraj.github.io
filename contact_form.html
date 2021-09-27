@@ -4,6 +4,8 @@
         <title> Contact Me </title>
         <script type="module" src="src/form.js"> </script>
         <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
     </head>
 
     <body id="contact_form_body">
@@ -20,23 +22,23 @@
         <form id="contact_form">
             <p id="successMessage"> </p>
             <label> Last Name </label><br>
-            <input type="text" id="user_lname" autofocus><br><br>
+            <input type="text" id="user_lname" name="user_lname" autofocus><br><br>
             <p id="lastNameChecker"> </p>
 
             <label> First Name </label><br>
-            <input type="text" id="user_fname"><br><br>
+            <input type="text" id="user_fname" name="user_fname"><br><br>
             <p id="firstNameChecker"> </p>
 
             <label> Email Address </label><br>
-            <input type="email" id="user_email" placeholder="xyz@<domain>.<top-level domain>"><br><br>
+            <input type="email" id="user_email" name="user_email" placeholder="xyz@<domain>.<top-level domain>"><br><br>
             <p id="emailChecker"> </p>
 
             <label> Phone Number </label><br>
-            <input type="tel" id="user_phone" placeholder="123-456-7890"><br><br>
+            <input type="tel" name="user_phone" id="user_phone" placeholder="123-456-7890"><br><br>
             <p id="phoneChecker"> </p>
 
             <label> Message </label><br>
-            <textarea id="user_message"  rows="10" cols="30">
+            <textarea id="user_message" name="user_message"  rows="10" cols="30">
             </textarea><br><br>
             <p id="messageChecker"> </p>
 
