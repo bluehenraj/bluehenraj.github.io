@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Contact Me </title>
+        <script type="module" src="src/form.js"> </script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body id="contact_form_body">
+        <h1 align="center"> Contact Me </h1>
+        <div id="homepageLinks">
+            <a href="aboutMe.html">About Me</a> &nbsp; &nbsp;
+            <a href="index.html"> Home Page </a> &nbsp; &nbsp;
+            <a href="https://mattm401.github.io">CISC474 Course Website </a> &nbsp; &nbsp;
+            <a href="contact_form.html"> Contact Me </a> &nbsp; &nbsp;
+        </div>
+        <br>
+        <h3 align="center"> Have any questions? </h3>
+        <p style="text-align: center"> Please provide your personal contact information by filling up the below form fields and get your questions answered now </p> <br>
+        <form id="contact_form">
+            <p id="successMessage"> </p>
+            <label> Last Name </label><br>
+            <input type="text" id="user_lname" autofocus><br><br>
+            <p id="lastNameChecker"> </p>
+
+            <label> First Name </label><br>
+            <input type="text" id="user_fname"><br><br>
+            <p id="firstNameChecker"> </p>
+
+            <label> Email Address </label><br>
+            <input type="email" id="user_email" placeholder="xyz@<domain>.<top-level domain>"><br><br>
+            <p id="emailChecker"> </p>
+
+            <label> Phone Number </label><br>
+            <input type="tel" id="user_phone" placeholder="123-456-7890"><br><br>
+            <p id="phoneChecker"> </p>
+
+            <label> Message </label><br>
+            <textarea id="user_message"  rows="10" cols="30">
+            </textarea><br><br>
+            <p id="messageChecker"> </p>
+
+            
+            <button> Submit </button>
+        </form>
+    </body>
+</html>    
