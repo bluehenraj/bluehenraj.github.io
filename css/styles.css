@@ -64,6 +64,10 @@
    cursor: pointer;
 }
 
+#form-container img{
+   cursor: pointer;
+}
+
 em{
    color: white;
 }
@@ -137,7 +141,7 @@ em{
  #contact_form{
     position: relative;
     left: 400px;
-    top: -150px;
+    top: -220px;
  }
 
  #user_fname, #user_lname, #user_email, #user_phone{
