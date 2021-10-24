@@ -17,8 +17,8 @@
        Course Number: CISC474 010
    -->
         <div id="header">
-            <a href="aboutMe.html" id="aboutMeLink">About Me</a> &nbsp; &nbsp;
-            <a href="index.html" id="homePageLink"> Home Page </a> &nbsp; &nbsp;
+            <a href="aboutMe.html" id="aboutMeLink">About</a> &nbsp; &nbsp; &nbsp;
+            <a href="index.html" id="homePageLink">Home</a> &nbsp; &nbsp;
             <span class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Class Links</a> &nbsp; &nbsp;
                 <div class="dropdown-content">
@@ -27,46 +27,54 @@
                     <a href="https://paultownshend.github.io/personalWebsite/">Previous Student</a>
                 </div>
             </span>
-            <a href="contact_form.html" id="contactFormLink"> Contact Me </a> &nbsp; &nbsp;
+            <a href="contact_form.html" id="contactFormLink"> Contact</a> &nbsp; &nbsp;
         </div>
 
         <br>
-        <h3 class="contactFormHeading"> Have any questions? </h3>
-        <p id="contactFormDescription"> Please provide your personal contact information by filling up the below form fields and get your questions answered now </p> <br>
-        <form id="contact_form">
-            <p id="successMessage"> </p>
-            <label> Last Name<sup>*</sup> </label><br>
-            <input type="text" id="user_lname" name="user_lname" autofocus><br><br>
-            <p id="lastNameChecker"> </p>
 
-            <label> First Name<sup>*</sup> </label><br>
-            <input type="text" id="user_fname" name="user_fname"><br><br>
-            <p id="firstNameChecker"> </p>
+        <div id="form-container">
+            <h2> Connect </h2>
+            <p>Please use the form on this page to <br> send a direct e-mail to Raj. While he <br> maintains a busy schedule, he will do <br> his best to respond in a timely manner. </p>
 
-            <label> Email Address<sup>*</sup> </label><br>
-            <input type="email" id="user_email" name="user_email" placeholder="xyz@<domain>.<top-level domain>"><br><br>
-            <p id="emailChecker"> </p>
+            <form id="contact_form">
 
-            <label> Phone Number<sup>*</sup> </label><br>
-            <input type="tel" name="user_phone" id="user_phone" placeholder="123-456-7890"><br><br>
-            <p id="phoneChecker"> </p>
+                <p id="successMessage"> </p>
 
-            <label> Message<sup>*</sup> </label><br>
-            <textarea id="user_message" name="user_message"  rows="10" cols="30">
-            </textarea><br><br>
-            <p id="messageChecker"> </p>
+                <label> First Name<sup>*</sup> </label><br>
+                <input type="text" id="user_fname" name="user_fname" autofocus> <br><br>
+                <p id="firstNameChecker"> </p>
+
+                <label> Last Name<sup>*</sup> </label><br>
+                <input type="text" id="user_lname" name="user_lname"> <br><br>
+                <p id="lastNameChecker"> </p>
+        
+
+                <label> Email Address<sup>*</sup> </label><br>
+                <input type="email" id="user_email" name="user_email" placeholder="xyz@<domain>.<top-level domain>"><br><br>
+                <p id="emailChecker"> </p>
+
+                <label> Phone Number<sup>*</sup> </label><br>
+                <input type="tel" name="user_phone" id="user_phone" placeholder="123-456-7890"><br><br>
+                <p id="phoneChecker"> </p>
+
+                <label> Message<sup>*</sup> </label><br>
+                <textarea id="user_message" name="user_message"  rows="20" cols="50">
+                </textarea><br><br>
+                <p id="messageChecker"> </p>
 
             
-            <button> Submit </button>
-        </form>
+                <button> Submit </button>
+            </form>
+
+        </div>
 
         <div id="footer">
             <br>
             <br>
             <br>
-            <a href="aboutMe.html" id="footer-aboutMeLink">About Me</a> &nbsp; &nbsp;
-            <a href="index.html" id="footer-homePageLink"> Home Page </a> &nbsp; &nbsp;
-            <a href="contact_form.html" id="footer-contactFormLink"> Contact Me </a> &nbsp; &nbsp;
+            <a href="aboutMe.html" id="footer-aboutMeLink">About</a> &nbsp; &nbsp;
+            <a href="index.html" id="footer-homePageLink">Home </a> &nbsp; &nbsp;
+            <a href="contact_form.html" id="footer-contactFormLink">Contact</a> &nbsp; &nbsp;
             <br>
             <br>
             <img src="img/linkedin-logo-png.png" onclick="window.location.href='https://www.linkedin.com/in/raj-trivedi/'" id="linkedin-logo-img" alt="LinkedIn Logo Image" width="30" height="30"> &nbsp;&nbsp;

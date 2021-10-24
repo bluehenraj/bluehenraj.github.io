@@ -1,6 +1,7 @@
  body{ 
     background-color: whitesmoke;
     overflow-y: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
  span a, .dropbtn {
    display: inline-block;
@@ -126,14 +127,28 @@ em{
  #bulleted-list{
     list-style-position:inside;
  }
- .contactFormHeading{
-    text-align: center;
+
+ #form-container{
+    position: relative;
+    left: 200px;
+    top: 100px;
  }
- #contactFormDescription{
-    text-align: center;
+
+ #contact_form{
+    position: relative;
+    left: 400px;
+    top: -150px;
  }
+
+ #user_fname, #user_lname, #user_email, #user_phone{
+    width: 300px;
+    height: 30px;
+ } 
+
  button{
-    font-size:20px; 
+    font-size: 20px;
+    width: 250px;
+    height: 100px; 
     color:black; 
     padding: 10px 10px; 
     border-radius: 12px;
