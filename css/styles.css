@@ -1,24 +1,93 @@
- body{
-    font-size:20px; 
-    background-color:rgb(176, 229, 230);
+ body{ 
+    background-color: whitesmoke;
+    overflow-y: auto;
  }
-
+ span a, .dropbtn {
+   display: inline-block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-family: fantasy;
+   font-size:20px;
+ }
+ 
+ span a:hover, .dropdown:hover .dropbtn {
+   background-color: white;
+   color: black;
+   font-family: fantasy;
+   font-size:20px;
+ }
+ 
+ span.dropdown {
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   font-family: fantasy;
+   font-size:20px;
+ }
+ 
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .dropdown-content a:hover {background-color: #f1f1f1;}
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+ 
  #homepageHeading{
     text-align: center;
  }
- #homepageLinks{
+
+ #footer{
+   clear: both;
+   text-align: center;
+   background-color: rgb(133, 57, 57); 
+   padding: 20px 20px;
+}
+
+#footer img{
+   cursor: pointer;
+}
+
+em{
+   color: white;
+}
+
+#footer #footer-aboutMeLink, #footer-homePageLink, #footer-contactFormLink{
+   text-decoration: underline;
+   color: white;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size:20px;
+}
+
+ #header{
     overflow: hidden;
     text-align: center;
-    background-color: black; 
+    background-color: rgb(133, 57, 57); 
     padding: 10px 10px;
  }
- #homepageLinks a{
+ #header #aboutMeLink, #homePageLink, #contactFormLink{
     text-decoration: none;
     color: white;
+    font-family:fantasy;
+    font-size:20px;
  }
- #homepageLinks a:hover{
-    background-color: white;
-    color: black;
+ #header #aboutMeLink:hover, #homePageLink:hover, #contactFormLink:hover{
+    text-decoration: underline;
  }
  #my_image{
      float: left;
@@ -70,16 +139,7 @@
     border-radius: 12px;
     transition-duration: 0.4s;
  }
- #prev-student-button{
-    position: absolute; 
-    top: 70%; 
-    left: 35%;
- }
- #next-student-button{
-    position: absolute; 
-    top: 70%; 
-    left: 52%;
- }
+
  button:hover{
     background-color: black;
     color: white;

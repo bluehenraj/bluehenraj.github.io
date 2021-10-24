@@ -7,8 +7,6 @@
  </head>
 
  <body>
-  <div id="heading">
-   <h1> About Me </h1>
 
    <!--
        Name: Raj Trivedi
@@ -16,15 +14,21 @@
        UDEL email address: triudrav@udel.edu
        Course Number: CISC474 010
    -->
-
-  </div>
   
-  <div id="homepageLinks">
-   <a href="aboutMe.html">About Me</a> &nbsp; &nbsp;
-   <a href="index.html"> Home Page </a> &nbsp; &nbsp;
-   <a href="https://mattm401.github.io">CISC474 Course Website </a> &nbsp; &nbsp;
-   <a href="contact_form.html"> Contact Me </a> &nbsp; &nbsp;
+  <div id="header">
+    <a href="aboutMe.html" id="aboutMeLink">About Me</a> &nbsp; &nbsp;
+    <a href="index.html" id="homePageLink"> Home Page </a> &nbsp; &nbsp;
+    <span class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Class Links</a> &nbsp; &nbsp;
+        <div class="dropdown-content">
+            <a href="https://mattm401.github.io">CISC474 Course Website</a>
+            <a href="https://acastro0726.github.io/">Next Student</a>
+            <a href="https://paultownshend.github.io/personalWebsite/">Previous Student</a>
+        </div>
+    </span>
+    <a href="contact_form.html" id="contactFormLink"> Contact Me </a> &nbsp; &nbsp;
   </div>
+        
   
   <div id="education">
    <h2> Education </h2>
@@ -80,6 +84,23 @@
       <li> Web/Mobile Friendly </li>
       <li> User Interaction </li>
    </ul>
+  </div>
+
+  <div id="footer">
+    <br>
+    <br>
+    <br>
+    <a href="aboutMe.html" id="footer-aboutMeLink">About Me</a> &nbsp; &nbsp;
+    <a href="index.html" id="footer-homePageLink"> Home Page </a> &nbsp; &nbsp;
+    <a href="contact_form.html" id="footer-contactFormLink"> Contact Me </a> &nbsp; &nbsp;
+    <br>
+    <br>
+   <img src="img/linkedin-logo-png.png" onclick="window.location.href='https://www.linkedin.com/in/raj-trivedi/'" id="linkedin-logo-img" alt="LinkedIn Logo Image" width="30" height="30"> &nbsp;&nbsp;
+   <img src="img/github-logo-png.png" onclick="window.location.href='https://github.com/bluehenraj'" id="github-logo-img" alt="GitHub Logo Image" width="30" height="30">
+   <br>
+   <br>
+   <br>
+   <em>© 2021 Raj Trivedi. All rights reserved. </em>
   </div>
  </body>
 </html>

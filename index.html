@@ -7,9 +7,6 @@
  </head>
 
  <body>
-  
-  <div id="homepageHeading">
-   <h1> Raj Trivedi </h1>
 
    <!--
        Name: Raj Trivedi
@@ -18,13 +15,18 @@
        Course Number: CISC474 010
    -->
 
-  </div>
-  
-  <div id="homepageLinks">
-   <a href="aboutMe.html">About Me</a> &nbsp; &nbsp;
-   <a href="index.html"> Home Page </a> &nbsp; &nbsp;
-   <a href="https://mattm401.github.io">CISC474 Course Website </a> &nbsp; &nbsp;
-   <a href="contact_form.html"> Contact Me </a> &nbsp; &nbsp;
+  <div id="header">
+   <a href="aboutMe.html" id="aboutMeLink">About Me</a> &nbsp; &nbsp;
+   <a href="index.html" id="homePageLink"> Home Page </a> &nbsp; &nbsp;
+   <span class="dropdown">
+     <a href="javascript:void(0)" class="dropbtn">Class Links</a> &nbsp; &nbsp;
+     <div class="dropdown-content">
+       <a href="https://mattm401.github.io">CISC474 Course Website</a>
+       <a href="https://acastro0726.github.io/">Next Student</a>
+       <a href="https://paultownshend.github.io/personalWebsite/">Previous Student</a>
+     </div>
+   </span>
+   <a href="contact_form.html" id="contactFormLink"> Contact Me </a> &nbsp; &nbsp;
   </div>
   
   <br>
@@ -41,12 +43,21 @@
    <p> This is CISC474 course on Advanced Web Technologies. <br> </p>
   </div>
 
-  <br>
-  <br>
-
-  <div id="homepageButtons">
-   <button id="prev-student-button" onclick="window.location.href='https://paultownshend.github.io/personalWebsite/'"> Previous Student </button>
-   <button id="next-student-button" onclick="window.location.href='https://acastro0726.github.io/'"> Next Student </button>
+  <div id="footer">
+   <br>
+   <br>
+   <br>
+   <a href="aboutMe.html" id="footer-aboutMeLink">About Me</a> &nbsp; &nbsp;
+   <a href="index.html" id="footer-homePageLink"> Home Page </a> &nbsp; &nbsp;
+   <a href="contact_form.html" id="footer-contactFormLink"> Contact Me </a> &nbsp; &nbsp;
+   <br>
+   <br>
+   <img src="img/linkedin-logo-png.png" onclick="window.location.href='https://www.linkedin.com/in/raj-trivedi/'" id="linkedin-logo-img" alt="LinkedIn Logo Image" width="30" height="30"> &nbsp;&nbsp;
+   <img src="img/github-logo-png.png" onclick="window.location.href='https://github.com/bluehenraj'" id="github-logo-img" alt="GitHub Logo Image" width="30" height="30">
+   <br>
+   <br>
+   <br>
+   <em>© 2021 Raj Trivedi. All rights reserved. </em>
   </div>
 
  </body>
