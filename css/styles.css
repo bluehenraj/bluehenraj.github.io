@@ -97,9 +97,8 @@ em{
  
  #my_image{
     position: relative;
-    top: 70px;
     width: 600px;
-    height: 800px;
+    height: 650px;
     float: right;
  }
  #heading{
@@ -128,6 +127,7 @@ em{
     margin-left: 150px;
  }
  #interestingFact #small_baby_image{
+    margin-left: 20px;
     float: left;
  }
  #webDevelopmentAspect{
