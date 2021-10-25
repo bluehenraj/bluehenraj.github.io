@@ -94,9 +94,16 @@ em{
  .header #homePageLink:hover, #contactFormLink:hover{
     text-decoration: underline;
  }
+
+ #homepageTitle{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+ }
  
  #my_image{
     position: relative;
+    top: 20px;
     width: 600px;
     height: 650px;
     float: right;
