@@ -53,15 +53,22 @@
     text-align: center;
  }
 
- #footer{
+ .footer{
    clear: both;
    text-align: center;
    background-color: rgb(133, 57, 57); 
    padding: 20px 20px;
 }
 
-#footer img{
+.footer img{
    cursor: pointer;
+}
+
+.footer a{
+   text-decoration: underline;
+   color: white;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size:20px;
 }
 
 #form-container img{
@@ -72,30 +79,28 @@ em{
    color: white;
 }
 
-#footer #footer-aboutMeLink, #footer-homePageLink, #footer-contactFormLink{
-   text-decoration: underline;
-   color: white;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font-size:20px;
-}
-
- #header{
+ .header{
     overflow: hidden;
     text-align: center;
     background-color: rgb(133, 57, 57); 
     padding: 10px 10px;
  }
- #header #aboutMeLink, #homePageLink, #contactFormLink{
+ .header #homePageLink, #contactFormLink{
     text-decoration: none;
     color: white;
     font-family:fantasy;
     font-size:20px;
  }
- #header #aboutMeLink:hover, #homePageLink:hover, #contactFormLink:hover{
+ .header #homePageLink:hover, #contactFormLink:hover{
     text-decoration: underline;
  }
+ 
  #my_image{
-     float: left;
+    position: relative;
+    top: 70px;
+    width: 600px;
+    height: 800px;
+    float: right;
  }
  #heading{
     text-align: center;
