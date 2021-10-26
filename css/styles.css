@@ -85,20 +85,35 @@ em{
     background-color: rgb(133, 57, 57); 
     padding: 10px 10px;
  }
- .header #homePageLink, #contactFormLink{
+ .header #homePageLink, #contactFormLink, #workPageLink{
     text-decoration: none;
     color: white;
     font-family:fantasy;
     font-size:20px;
  }
- .header #homePageLink:hover, #contactFormLink:hover{
+ .header #homePageLink:hover, #contactFormLink:hover, #workPageLink:hover{
     text-decoration: underline;
  }
 
- #homepageTitle{
+ #homepageTitle, #workpageSectionOneTitle, #workpageSectionTwoTitle{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
+ }
+
+ #workpage-container{
+    margin-left: 30px;
+    margin-right: 30px;
+ }
+
+ #workpageSectionTwo{
+    text-align: center
+ }
+
+ #projectOneTitle, #projectTwoTitle, #projectThreeTitle{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
  }
  
  #my_image{
