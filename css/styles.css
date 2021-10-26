@@ -89,13 +89,13 @@ em{
     background-color: rgb(133, 57, 57); 
     padding: 10px 10px;
  }
- .header #homePageLink, #contactFormLink, #workPageLink{
+ .header #homePageLink, #contactFormLink, #workPageLink, #eventsPageLink{
     text-decoration: none;
     color: white;
     font-family:fantasy;
     font-size:20px;
  }
- .header #homePageLink:hover, #contactFormLink:hover, #workPageLink:hover{
+ .header #homePageLink:hover, #contactFormLink:hover, #workPageLink:hover, #eventsPageLink:hover{
     text-decoration: underline;
  }
 
@@ -105,7 +105,7 @@ em{
     font-size: 50px;
  }
 
- #workpage-container{
+ #workpage-container, #eventsPage-container{
     margin-left: 30px;
     margin-right: 30px;
  }
@@ -114,7 +114,15 @@ em{
     text-align: center
  }
 
- #projectOneTitle, #projectTwoTitle, #projectThreeTitle{
+ #events-description{
+    text-align: center
+ }
+
+ #eventOne-description, #eventTwo-description{
+    clear: both;
+ }
+
+ #projectOneTitle, #projectTwoTitle, #projectThreeTitle, #eventOneTitle, #eventTwoTitle{
     font-weight: bold;
     font-size: 20px;
     text-decoration: underline;
