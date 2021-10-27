@@ -10,6 +10,9 @@
    .header, .footer, #homepage-container, #form-container, #workpage-container, #eventsPage-container{
      width: 100%;
    }
+   #my_image{
+     display: none;
+   }
  }
 
  span a, .dropbtn {
