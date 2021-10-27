@@ -11,7 +11,8 @@
      width: 100%;
    }
    #my_image{
-     width: 50px;
+     width: 1px;
+     height: 1px;
    }
  }
 
