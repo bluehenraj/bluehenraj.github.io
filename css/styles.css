@@ -7,11 +7,11 @@
 
 @media only screen and (max-width: 620px) {
    /* For mobile phones: */
-   .header, .footer, #homepage-container, #form-container, #workpage-container, #eventsPage-container{
+   .header, .footer, #form-container, #workpage-container, #eventsPage-container{
      width: 100%;
    }
    #my_image{
-     display: none;
+     width: 50px;
    }
  }
 
