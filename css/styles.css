@@ -105,16 +105,16 @@ em{
     font-size: 50px;
  }
 
+ #code_for_good_img-container, #acm_img-container{
+    text-align: center;
+ }
+
  #workpage-container, #eventsPage-container{
     margin-left: 30px;
     margin-right: 30px;
  }
 
  #workpageSectionTwo{
-    text-align: center
- }
-
- #events-description{
     text-align: center
  }
 
@@ -126,6 +126,7 @@ em{
     font-weight: bold;
     font-size: 20px;
     text-decoration: underline;
+    text-align: center;
  }
  
  #my_image{
@@ -135,6 +136,7 @@ em{
     height: 650px;
     float: right;
  }
+
  #heading{
     text-align: center;
  }
