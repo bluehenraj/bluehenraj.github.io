@@ -53,6 +53,14 @@
     text-align: center;
  }
 
+ .homepageSectionsTitle{
+    margin-left: 80px;
+ }
+
+ .homepageSectionsContent{
+   margin-left: 10px;
+}
+
  .footer{
    clear: both;
    text-align: center;
@@ -154,11 +162,11 @@ em{
  }
  #nature-img-text{
     float:left;
-    margin-left: 90px;
+    margin-left: 130px;
  }
  #sports-img-text{
     float:left;
-    margin-left: 150px;
+    margin-left: 190px;
  }
  #interestingFact #small_baby_image{
     margin-left: 20px;
