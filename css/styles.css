@@ -7,7 +7,7 @@
 
 @media only screen and (max-width: 620px) {
    /* For mobile phones: */
-   .header, .footer{
+   .header, .footer, #homepage-container, #form-container, #workpage-container, #eventsPage-container{
      width: 100%;
    }
  }
