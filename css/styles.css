@@ -1,3 +1,9 @@
+ /**
+   Name - Raj Trivedi
+   Assignment Name - Responsive Personal Portfolio Website
+   Date - October 28th, 2021
+ **/
+ 
  body{ 
     background-color: whitesmoke;
     overflow-y: auto;
@@ -7,7 +13,7 @@
 
 @media screen and (max-width: 1500px) {
    /* For mobile phones: */
-   /* 1vw = 6.5px --- Viewport width = Pixel value / 6.5 */
+   /* 1vw = 6.5px --- Viewport width = (Pixel value / 6.5) */
    .header, .footer{
      width: 100%;
    }
