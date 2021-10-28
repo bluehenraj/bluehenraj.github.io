@@ -112,7 +112,7 @@
    font-size:20px;
 }
 
-#form-container-for-laptop img, #form-container-for-smallscreens{
+#form-container img{
    cursor: pointer;
 }
 
@@ -228,18 +228,13 @@ em{
     list-style-position:inside;
  }
 
- #form-container-for-laptop{
-    display: block;
+ #form-container{
     position: relative;
     left: 200px;
     top: 100px;
  }
 
- #form-container-for-smallscreens{
-    display: none;
- }
-
- #form-container-for-laptop #contact_form{
+ #contact_form{
     position: relative;
     left: 400px;
     top: -220px;

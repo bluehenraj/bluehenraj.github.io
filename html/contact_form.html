@@ -34,54 +34,15 @@
 
         <br>
 
-        <div id="form-container-for-laptop">
-            <h2> Connect </h2>
-            <p>Please use the form on this page to <br> send a direct e-mail to me. While I <br> maintain a busy schedule, I will do <br> my best to respond in a timely manner. </p> <br>
-            <img src="/img/linkedin-logo-png.png" onclick="window.location.href='https://www.linkedin.com/in/raj-trivedi/'" id="linkedin-logo-img" alt="LinkedIn Logo Image" width="30" height="30"> &nbsp;&nbsp;
-            <img src="/img/github-logo-png.png" onclick="window.location.href='https://github.com/bluehenraj'" id="github-logo-img" alt="GitHub Logo Image" width="30" height="30"> &nbsp;&nbsp;
-            <a href="mailto:triudrav@udel.edu"><img src="/img/mail-logo-png.png" id="mail-logo-img" alt="Mail Logo Image" width="30" height="30"></a>
-            <form id="contact_form">
-
-                <p id="successMessage"> </p>
-
-                <label> First Name<sup>*</sup> </label><br>
-                <input type="text" id="user_fname" name="user_fname" autofocus> <br><br>
-                <p id="firstNameChecker"> </p>
-
-                <label> Last Name<sup>*</sup> </label><br>
-                <input type="text" id="user_lname" name="user_lname"> <br><br>
-                <p id="lastNameChecker"> </p>
-        
-
-                <label> Email Address<sup>*</sup> </label><br>
-                <input type="email" id="user_email" name="user_email" placeholder="xyz@<domain>.<top-level domain>"><br><br>
-                <p id="emailChecker"> </p>
-
-                <label> Phone Number<sup>*</sup> </label><br>
-                <input type="tel" name="user_phone" id="user_phone" placeholder="123-456-7890"><br><br>
-                <p id="phoneChecker"> </p>
-
-                <label> Message<sup>*</sup> </label><br>
-                <textarea id="user_message" name="user_message"  rows="20" cols="50">
-                </textarea><br><br>
-                <p id="messageChecker"> </p>
-
-            
-                <button> Submit </button>
-            </form>
-
-        </div>
-
-        <div id="form-container-for-smallscreens">
-            <div id="smallscreens-form-description">
+        <div id="form-container">
+            <div id="contact_form-introduction">
                 <h2> Connect </h2>
                 <p>Please use the form on this page to <br> send a direct e-mail to me. While I <br> maintain a busy schedule, I will do <br> my best to respond in a timely manner. </p> <br>
-                <img src="img/linkedin-logo-png.png" onclick="window.location.href='https://www.linkedin.com/in/raj-trivedi/'" id="linkedin-logo-img" alt="LinkedIn Logo Image" width="30" height="30"> &nbsp;&nbsp;
-                <img src="img/github-logo-png.png" onclick="window.location.href='https://github.com/bluehenraj'" id="github-logo-img" alt="GitHub Logo Image" width="30" height="30"> &nbsp;&nbsp;
-                <a href="mailto:triudrav@udel.edu"><img src="img/mail-logo-png.png" id="mail-logo-img" alt="Mail Logo Image" width="30" height="30"></a>
+                <img src="/img/linkedin-logo-png.png" onclick="window.location.href='https://www.linkedin.com/in/raj-trivedi/'" id="linkedin-logo-img" alt="LinkedIn Logo Image" width="30" height="30"> &nbsp;&nbsp;
+                <img src="/img/github-logo-png.png" onclick="window.location.href='https://github.com/bluehenraj'" id="github-logo-img" alt="GitHub Logo Image" width="30" height="30"> &nbsp;&nbsp;
+                <a href="mailto:triudrav@udel.edu"><img src="/img/mail-logo-png.png" id="mail-logo-img" alt="Mail Logo Image" width="30" height="30"></a>
             </div>
-            <br>
-            <div id="smallscreens-form-container">
+            <div id="contact_form-container">    
                 <form id="contact_form">
 
                     <p id="successMessage"> </p>
@@ -111,18 +72,17 @@
             
                     <button> Submit </button>
                 </form>
-             </div>   
+            </div>    
+
         </div>
         <script>
             if(window.innerWidth <= 945){
-                document.getElementById("smallscreens-form-description").style = "text-align: center";
-                document.getElementById("smallscreens-form-container").style = "text-align: center";
-                document.getElementById("form-container-for-smallscreens").style.display = "block";
-                document.getElementById("form-container-for-laptop").style.display = "none";
+                document.getElementById("form-container").style = "position: relative; left: 0px; top: -2px; text-align: center";
+                document.getElementById("contact_form").style = "position: relative; left: 0px; top: 10px; text-align: center";
             }
             else{
-                document.getElementById("form-container-for-smallscreens").style.display = "none";
-                document.getElementById("form-container-for-laptop").style.display = "block";
+                document.getElementById("form-container").style = "position: relative; top: 100px; left: 200px";
+                document.getElementById("contact_form").style = "position: relative; left: 400px; top: -220px;";
             }
         </script>
 
