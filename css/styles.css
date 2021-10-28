@@ -250,7 +250,7 @@ em{
     height: 30px;
  }
  
- .anchorButtons{
+ #download-btn{
    background-color: #199319;
    color: white;
    padding: 30px 50px;
