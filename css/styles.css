@@ -5,11 +5,36 @@
  }
 
 
-@media only screen and (max-width: 620px) {
+@media screen and (max-width: 1500px) {
    /* For mobile phones: */
-   .header, .footer, #homepage-container, #form-container, #workpage-container, #eventsPage-container{
+   /* 1vw = 6.5px --- Viewport width = Pixel value / 6.5 */
+   .header, .footer{
      width: 100%;
    }
+
+   img{
+      max-width: 100%;
+   }
+
+   .homepageImages{
+      float: right;
+      text-align: center
+   }
+
+   .homepageSectionsTitle{
+      text-align: center;
+   }
+   .homepageSectionsContent{
+      left: 100%;
+   }
+
+/* Can be used to debug the process
+   body{
+         background-color: red;
+   }
+*/
+
+
  }
 
  span a, .dropbtn {
@@ -154,11 +179,20 @@ em{
     float: right;
  }
 
+ iframe{
+   width: 700px;
+   height: 960px;
+ }
+
  #heading{
     text-align: center;
  }
  #education #ud_image{
     float: left;
+ }
+
+ #jpmc_image{
+    float:left;
  }
  
  #singing-img-text{
@@ -200,7 +234,7 @@ em{
  }
 
  #user_fname, #user_lname, #user_email, #user_phone{
-    width: 300px;
+    max-width: 300px;
     height: 30px;
  } 
 
