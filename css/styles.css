@@ -22,7 +22,7 @@
    .homepageSectionsContent{
       left: 100%;
    }
-   
+
 /* Can be used to debug the process
    body{
          background-color: red;
@@ -106,7 +106,7 @@
    font-size:20px;
 }
 
-#form-container img{
+#form-container-for-laptop img, #form-container-for-smallscreens{
    cursor: pointer;
 }
 
@@ -222,20 +222,25 @@ em{
     list-style-position:inside;
  }
 
- #form-container{
+ #form-container-for-laptop{
+    display: block;
     position: relative;
     left: 200px;
     top: 100px;
  }
 
- #contact_form{
+ #form-container-for-smallscreens{
+    display: none;
+ }
+
+ #form-container-for-laptop #contact_form{
     position: relative;
     left: 400px;
     top: -220px;
  }
 
  #user_fname, #user_lname, #user_email, #user_phone{
-    max-width: 300px;
+    width: 300px;
     height: 30px;
  } 
 
