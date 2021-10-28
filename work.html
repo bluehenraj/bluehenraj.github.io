@@ -83,10 +83,30 @@
 
     <h2 id="workpageSectionTwoTitle"> RESUME </h2>
     <div id="workpageSectionTwo">
-        <iframe src="/local/resume.pdf#toolbar=0" title="My Resume"></iframe>
-        <br>
-        <br>
-        <a href="/local/resume.pdf" download="Trivedi, Raj_Resume.pdf"> <button> Download </button></a>
+        <div id="resumeViewerSection">
+            <iframe src="/local/resume.pdf#toolbar=0" title="My Resume"></iframe>
+            <br>
+            <br>
+            <a href="/local/resume.pdf" download="Trivedi, Raj_Resume.pdf"> <button> Download </button></a>
+        </div>
+        <div id="resumeNotSupportedSection">
+            <p> Resume Viewer is not supported in browser with small width. Either view it externally or download it.</p>
+            <br>
+            <br>
+            <a href="/local/resume.pdf" target="_blank"> <button> View Externally </button></a>
+            <a href="/local/resume.pdf" download="Trivedi, Raj_Resume.pdf"> <button> Download </button></a>
+        </div>   
+
+        <script>
+            if(window.innerWidth <= 770){
+                document.getElementById("resumeViewerSection").style.display = "none";
+                document.getElementById("resumeNotSupportedSection").style.display = "block";
+            }
+            else{
+                document.getElementById("resumeViewerSection").style.display = "block";
+                document.getElementById("resumeNotSupportedSection").style.display = "none";
+            }
+        </script> 
     </div>
   </div>  
 

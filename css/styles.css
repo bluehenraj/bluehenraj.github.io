@@ -16,18 +16,13 @@
       max-width: 100%;
    }
 
-   .homepageImages{
-      float: right;
-      text-align: center
-   }
-
    .homepageSectionsTitle{
       text-align: center;
    }
    .homepageSectionsContent{
       left: 100%;
    }
-
+   
 /* Can be used to debug the process
    body{
          background-color: red;
@@ -155,7 +150,15 @@ em{
  }
 
  #workpageSectionTwo{
-    text-align: center
+    text-align: center;
+ }
+
+ #resumeViewerSection{
+    display: block;
+ }
+
+ #resumeNotSupportedSection{
+   display: none;
  }
 
  #eventOne-description, #eventTwo-description{
