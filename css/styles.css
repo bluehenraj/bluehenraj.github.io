@@ -29,6 +29,13 @@
       left: 100%;
    }
 
+   .anchorButtons{
+      background-color: #199319;
+      color: white;
+      padding: 30px 50px;
+      text-decoration: none;
+    }
+
 /* Can be used to debug the process
    body{
          background-color: red;
