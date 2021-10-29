@@ -97,15 +97,17 @@
         </div>   
 
         <script>
-            if(window.innerWidth <= 770){
-                document.getElementById("resumeViewerSection").style.display = "none";
-                document.getElementById("resumeNotSupportedSection").style.display = "block";
-                document.getElementById("view-externally-btn").style = "background-color: #199319; color: white; padding: 30px 50px; text-decoration: none;"
-            }
-            else{
-                document.getElementById("resumeViewerSection").style.display = "block";
-                document.getElementById("resumeNotSupportedSection").style.display = "none";
-            }
+            setInterval(function(){
+                if(window.innerWidth <= 770){
+                    document.getElementById("resumeViewerSection").style.display = "none";
+                    document.getElementById("resumeNotSupportedSection").style.display = "block";
+                    document.getElementById("view-externally-btn").style = "background-color: #199319; color: white; padding: 30px 50px; text-decoration: none;"
+                }
+                else{
+                    document.getElementById("resumeViewerSection").style.display = "block";
+                    document.getElementById("resumeNotSupportedSection").style.display = "none";
+                }
+            } , 500);
         </script> 
     </div>
   </div>  
