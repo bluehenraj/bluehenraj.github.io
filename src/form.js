@@ -50,44 +50,6 @@ let isValidEmailAddress = function(emailAddress){
     return true;
 };
 
-// Check the format of a phone number
-let isValidPhoneNumber = function(phoneNumber){
-    let size = phoneNumber.length;
-
-    if(size != 12){
-        if(size < 12){
-            document.getElementById("phoneChecker").innerText = "Phone number too short";
-            document.getElementById("phoneChecker").style = "color: red";
-        }
-        else{
-            document.getElementById("phoneChecker").innerText = "Phone number too long";
-            document.getElementById("phoneChecker").style = "color: red"; 
-        }
-        return false;
-    }
-
-    for(let i = 0; i < size; i++){
-        let currStr = String(phoneNumber.charAt(i));
-        if(i != 3 && i != 7){
-            if(isNaN(currStr)){
-                document.getElementById("phoneChecker").innerText = "Invalid character found in phone number";
-                document.getElementById("phoneChecker").style = "color: red";
-                return false;
-            }
-        }
-        else{
-            if(currStr != "-"){
-                document.getElementById("phoneChecker").innerText = "Missing '-' in phone number";
-                document.getElementById("phoneChecker").style = "color: red";
-                return false;
-            }
-        }
-    }
-
-    document.getElementById("phoneChecker").innerText = "";
-    return true;
-}
-
 document.getElementById("contact_form").onsubmit = function(){
     let lName = String(document.getElementById("user_lname").value).trim();
     let lNameSize = lName.length;
@@ -98,14 +60,11 @@ document.getElementById("contact_form").onsubmit = function(){
     let email = String(document.getElementById("user_email").value).trim();
     let emailSize = email.length;
 
-    let phone = String(document.getElementById("user_phone").value).trim();
-    let phoneSize = phone.length;
-
     let message = String(document.getElementById("user_message").value).trim();
     let messageSize = message.length;
 
     // Check for null field values
-    if(lNameSize == 0 || fNameSize == 0 || emailSize == 0 || phoneSize == 0 || messageSize == 0){
+    if(lNameSize == 0 || fNameSize == 0 || emailSize == 0 || messageSize == 0){
         if(lNameSize == 0){
             document.getElementById("lastNameChecker").innerText = "Empty last name field";
             document.getElementById("lastNameChecker").style = "color: red";
@@ -131,15 +90,6 @@ document.getElementById("contact_form").onsubmit = function(){
             isValidEmailAddress(email);
         }
 
-        if(phoneSize == 0){
-            document.getElementById("phoneChecker").innerText = "Empty phone number field";
-            document.getElementById("phoneChecker").style = "color: red";
-        }
-        else{
-            document.getElementById("phoneChecker").innerText = "";
-            isValidPhoneNumber(phone);
-        }
-
         if(messageSize == 0){
             document.getElementById("messageChecker").innerText = "Empty message field";
             document.getElementById("messageChecker").style = "color: red";
@@ -155,27 +105,22 @@ document.getElementById("contact_form").onsubmit = function(){
         document.getElementById("lastNameChecker").innerText = "";
         document.getElementById("firstNameChecker").innerText = "";
         document.getElementById("emailChecker").innerText = "";
-        document.getElementById("phoneChecker").innerText = "";
         document.getElementById("messageChecker").innerText = "";
     }
+    
+    // Check for valid email address format after phone
+    if(isValidEmailAddress(email)){
+        document.getElementById("successMessage").innerText = "SUCCESS!!!";
 
-    // Check for valid phone number format
-    if(isValidPhoneNumber(phone)){
-
-        // Check for valid email address format after phone
-        if(isValidEmailAddress(email)){
-            document.getElementById("successMessage").innerText = "SUCCESS!!!";
-
-            // Send an email using EmailJS
-            emailjs.send("contact_service","contact_form",{
-                to_name: "Raj Trivedi",
-                from_name: fName + " " + lName,
-                message: message,
-                user_email: email,
-                contact_number: phone,
-            });
-            return false;
-        }
+        // Send an email using EmailJS
+        emailjs.send("contact_service","contact_form", {
+            to_name: "Raj Trivedi",
+            from_name: fName + " " + lName,
+            message: message,
+            user_email: email,
+        });
+        
+        return false;
     }
 
     document.getElementById("successMessage").innerText = "";
